@@ -1,0 +1,13 @@
+using TMPro;
+using UnityEngine;
+
+public class TextMeshProScript : MonoBehaviour
+{
+    public TMP_FontAsset font;
+
+    void Start()
+    {
+        TMP_Text text = GetComponent<TMP_Text>();
+        text.font = font;
+    }
+}
